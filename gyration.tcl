@@ -11,8 +11,6 @@ mol new [list $type]_prot.psf
 mol addfile [list $type]_prot.pdb
 mol addfile md_[list $type]_whole.xtc waitfor all step 5
 
-#mkdir CA
-
 set sel [atomselect top "protein and noh"]
 set nf [molinfo top get numframes]
 
